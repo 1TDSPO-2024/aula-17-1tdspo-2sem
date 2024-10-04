@@ -50,7 +50,7 @@ export default function CadProduto() {
   return (
     <div>
       <h1>Cadastrar Produto</h1>
-      <form className="formulario" onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="idNome">Nome Produto:</label>
           <input
