@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #22262b;
+}
+
+h1,h2,h3{
+    color:#324957;
+}
+
+@layer components{
+    .cabecalho{
+        @apply bg-slate-500 text-black p-4 text-center;
+    }
+    
+
+
+}
