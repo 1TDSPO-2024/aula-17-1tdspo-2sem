@@ -10,6 +10,9 @@ export default function Menu() {
         <li>
           <Link href="/produtos">Produtos</Link>
         </li>
+        <li>
+          <Link href="/produtos/cad-produto">Cadastrar Produto</Link>
+        </li>
       </ul>
     </nav>
   );

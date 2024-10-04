@@ -21,7 +21,7 @@ export async function POST(request: Request) {
 
   const produto = await request.json();
 
-  const dados = JSON.parse(file);
+  const dados: TipoProduto[] = JSON.parse(file);
   const id = dados[dados.length - 1].id + 1;
   produto.id = id;
 
@@ -32,5 +32,5 @@ export async function POST(request: Request) {
     JSON.stringify(dados)
   );
 
-  return NextResponse.json({ produto });
+  return NextResponse.json(produto, { status: 201 });
 }

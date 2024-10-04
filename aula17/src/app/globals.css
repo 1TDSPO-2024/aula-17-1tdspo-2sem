@@ -7,13 +7,28 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+}
+
 ul {
   list-style: none;
+  display: flex;
+  gap: 1rem;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 1.2rem;
 }
 
 a:hover {
@@ -21,11 +36,18 @@ a:hover {
   transition: 0.3s;
 }
 
+h1 {
+  text-align: center;
+}
+
 @layer components {
   .cabecalho {
-    @apply bg-slate-500 text-white text-center p-4;
+    @apply bg-slate-500 text-white text-center p-4 flex justify-around;
   }
   .rodape {
     @apply bg-slate-500 text-white text-center p-4;
+  }
+  .formulario {
+    @apply to-black text-white text-center p-4;
   }
 }
