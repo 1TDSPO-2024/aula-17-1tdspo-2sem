@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 export default function Produtos() {
   //Criar uma lista de objetos de produtos eletrônicos co os seguintes dados:
   //id,nome, preço, marca, cor, modelo, quantidade, categoria, imagem
- 
+
   const [produtos, setProdutos] = useState<TipoProduto[]>([]);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Produtos() {
     chamadaDaApi();
 
   }, []);
-  
+
 
 
   //Iterar a lista de produtos em uma tabela, utilizando, head,body e footer.
